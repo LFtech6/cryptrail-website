@@ -1,0 +1,102 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  padding: 130px;
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: 0 auto; /* Centraliza o formulário na página */
+  max-width: 300px; /* Limita a largura do formulário */
+  text-align: center;
+}
+
+.form input {
+  width: calc(100% - 20px); /* Ajusta a largura do input com margens */
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form label {
+  display: block;
+}
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #FFA500;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #FF8C00;
+}
+
+.remember {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.register-link, .login-link {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.register-link a, .login-link a {
+  color: #FFA500;
+  text-decoration: none;
+}
+
+.register-link a:hover, .login-link a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 30px; /* Reduzir o preenchimento para telas menores */
+    display: flex;
+    justify-content: center;
+  }
+
+  .form {
+    max-width: 100%; /* Permitir que o formulário se estenda por toda a largura da tela */
+  }
+
+  .form input {
+    width: 100%; /* Largura total para os inputs */
+  }
+
+  button {
+    width: 100%; /* Largura total para o botão */
+  }
+
+  .register-link, .login-link {
+    margin-top: 10px; /* Reduzir a margem superior */
+  }
+}
