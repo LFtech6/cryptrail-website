@@ -36,3 +36,24 @@ if (loginForm) {
 if (registerForm) {
   registerForm.addEventListener('submit', handleRegister);
 }
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyAA4VxGzwFLXwDTq-IRe2wGxF_e7pmg_tA",
+  authDomain: "cryptrail.firebaseapp.com",
+  projectId: "cryptrail",
+  storageBucket: "cryptrail.appspot.com",
+  messagingSenderId: "620884748860",
+  appId: "1:620884748860:web:79304a7da9f72d9d9ab139",
+  measurementId: "G-BBSL7K3F17"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
