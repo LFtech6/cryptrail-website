@@ -1,36 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-PT">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CrypTrail Dashboard</title>
-  <link rel="stylesheet" href="dashboard.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dashboard - CryptoTrail</title>
 </head>
-
 <body>
-
-  <nav>
-    <a href="#">Dashboard</a>
-    <a href="#">Gráficos</a>
-    <a href="#">Relatórios</a>
-    <a href="#">Configurações</a>
-  </nav>
-
-  <div class="container">
-    <div class="content">
-      <!-- Conteúdo da sua página aqui -->
-      <h1>Bem-vindo ao CrypTrail Dashboard</h1>
-      <p>Este é o conteúdo do seu dashboard.</p>
+    
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="profile.html">Perfil</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="charts.html">Gráficos</a>
+            <a href="news.html">Notícias</a>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <h2>Dashboard</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Moeda</th>
+                    <th>Taxa de Câmbio</th>
+                    <th>Site Recomendado</th>
+                </tr>
+            </thead>
+            <tbody id="dashboardCoins">
+                <!-- As moedas e informações serão listadas aqui -->
+            </tbody>
+        </table>
     </div>
-  </div>
-
-  <!-- Rodapé (opcional) -->
-  <footer>
-    <p>&copy; 2023 CrypTrail. Todos os direitos reservados.</p>
-  </footer>
-
+    
+    <script src="script.js"></script>
 </body>
-
 </html>

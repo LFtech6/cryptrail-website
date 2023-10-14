@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   background-color: #f9f9f9;
   margin: 0;
   padding: 0;
@@ -7,40 +7,62 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-image: linear-gradient(120deg, #FFA500, #FF8C00);
 }
 
 .container {
-  padding: 130px;
+  padding: 20px;
   display: flex;
   justify-content: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
-.form {
+h1, h2 {
+  text-align: left;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: bold;
+
+}
+
+.form, .form1 {
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 10px;
-  margin: 0 auto; /* Centraliza o formulário na página */
-  max-width: 300px; /* Limita a largura do formulário */
+  margin: 0 auto;
+  max-width: 250px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form input, .form1 input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s;
   text-align: center;
 }
 
-.form input {
-  width: calc(100% - 20px); /* Ajusta a largura do input com margens */
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+.form input:focus, .form1 input:focus {
+  border-color: #FFA500;
+  outline: none;
 }
 
-.form label {
+.form label, .form1 label {
   display: block;
+  margin-bottom: 5px;
+  color: #555;
+  text-align: center;
 }
-input {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+
+.remember {
+  text-align: center;
+  margin-top: 10px;
 }
 
 button {
@@ -51,15 +73,12 @@ button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: bold;
 }
 
 button:hover {
   background-color: #FF8C00;
-}
-
-.remember {
-  text-align: center;
-  margin-top: 10px;
 }
 
 .register-link, .login-link {
@@ -71,32 +90,12 @@ button:hover {
 .register-link a, .login-link a {
   color: #FFA500;
   text-decoration: none;
+  transition: color 0.3s;
 }
 
 .register-link a:hover, .login-link a:hover {
-  text-decoration: underline;
+  color: #FF8C00;
 }
 
-@media screen and (max-width: 768px) {
-  .container {
-    padding: 30px; /* Reduzir o preenchimento para telas menores */
-    display: flex;
-    justify-content: center;
-  }
-
-  .form {
-    max-width: 100%; /* Permitir que o formulário se estenda por toda a largura da tela */
-  }
-
-  .form input {
-    width: 100%; /* Largura total para os inputs */
-  }
-
-  button {
-    width: 100%; /* Largura total para o botão */
-  }
-
-  .register-link, .login-link {
-    margin-top: 10px; /* Reduzir a margem superior */
-  }
-}
+/* Estilos adicionais para a navbar e outras páginas */
+/* ... (mantendo os estilos que você já forneceu anteriormente) ... */
