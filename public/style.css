@@ -85,6 +85,22 @@ body {
             margin-left: 20px;
         }
 
+        .about {
+            margin-top: 210px;
+            float: right;
+            width: 1000px;
+            margin-right: 60px;
+            font-size: 20px;
+        }
+
+        .hand {
+            width: 600px;
+            height: auto;
+            float: left;
+            margin-top: 20px;
+            margin-left: 160px;
+        }
+
         @media (max-width: 768px) {
             body {
                 background-color: #FFD464;
@@ -138,5 +154,22 @@ body {
 
             .dropdown a:hover {
                 background-color: #ddd;
+            }
+
+            .about {
+                margin-top: 100px;
+                margin-left: 20px;
+                float: right;
+                width: 100%;
+                margin-right: 0px;
+                font-size: 15px;
+            }
+
+            .hand {
+                width: 400px;
+                height: auto;
+                float: left;
+                margin-top: 20px;
+                margin-left: 0px;
             }
         }

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cryptrail - Support</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #FFD464;
+            height: auto;
+        }
+
+        .logo {
+            width: 60px;
+            height: 60px;
+        }
+
+        .ham {
+            display: none;
+            cursor: pointer;
+        }
+
+        .links {
+            text-decoration: none;
+            color: #000;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 20px;
+            float: right;
+            padding: 10px;
+        }
+
+        header, main, footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        header {
+            margin-bottom: -20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 800;
+            font-size: 40px;
+            border: #fff;
+        }
+
+        h2 {
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 20px;
+            color: #000;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+        }
+
+        .form-input {
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            padding: 10px;
+            margin: 10px 0;
+            width: 80%;
+            max-width: 400px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-input textarea {
+            resize: none;
+            height: 100px;
+        }
+
+        .submit-btn {
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+            padding: 10px 20px;
+            color: white;
+            background-color: #000;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .ham {
+                display: block;
+                width: 40px;
+                height: 40px;
+                margin-right: 7px;
+                float: right;
+            }
+
+            .links {
+                display: none;
+            }
+
+            .dropdown {
+                display: none;
+                position: absolute;
+                top: 60px;
+                right: 10px;
+                background-color: #FFD464;
+                box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+
+            .dropdown a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+
+            .dropdown a:hover {
+                background-color: #ddd;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div style="flex-direction: row">
+        <a href="index.html"><img src="./adaptive-icon.png" alt="Cryptrail" class="logo"></a>
+        <a class="links" href="terms.html">Terms and Conditions</a>
+        <a class="links" href="politics.html">Privacy Policy</a>
+        <a class="links" href="support.html">Support</a>
+        <a class="links" href="about.html">About us</a>
+        <img src="./hamenu.png" alt="hamburger" class="ham" onclick="toggleMenu()">
+        <div class="dropdown" id="dropdownMenu">
+            <a href="terms.html">Terms and Conditions</a>
+            <a href="politics.html">Privacy Policy</a>
+            <a href="support.html">Support</a>
+            <a href="about.html">About us</a>
+        </div>
+    </div>
+
+    <header>
+        <h1>Support</h1>
+        <h2>We're Here to Help</h2>
+    </header>
+
+    <main>
+        <form class="contact-form" action="mailto:cryptrailpt@example.com" method="post" enctype="text/plain">
+            <input type="text" class="form-input" name="name" placeholder="Your Name" required>
+            <input type="email" class="form-input" name="email" placeholder="Your Email" required>
+            <textarea class="form-input" name="message" placeholder="How can we help you?" required></textarea>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </main>
+
+
+    <script src="script.js"></script>    
+</body>
+</html>
